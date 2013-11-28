@@ -114,6 +114,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final boolean ONLY_ONE_TRUST_AGENT = true;
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String KEY_POWER_MENU_LOCKSCREEN = "lockscreen_enable_power_menu";
+    private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
 
     // CyanogenMod Additions
     private static final String KEY_APP_SECURITY_CATEGORY = "app_security";
@@ -147,6 +148,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private SwitchPreference mBlockOnSecureKeyguard;
     private SystemSettingSwitchPreference mPowerMenuLockscreen;
+    private ListPreference mLockNumpadRandom;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -309,6 +311,16 @@ public class SecuritySettings extends SettingsPreferenceFragment
             if (securityCategory != null && mVisiblePattern != null) {
                 securityCategory.removePreference(root.findPreference(KEY_VISIBLE_PATTERN));
             }
+        }
+
+        // Lock Numpad Random
+        mLockNumpadRandom = (ListPreference) root.findPreference(LOCK_NUMPAD_RANDOM);
+        if (mLockNumpadRandom != null) {
+            mLockNumpadRandom.setValue(String.valueOf(
+                    Settings.Secure.getInt(getContentResolver(),
+                    Settings.Secure.LOCK_NUMPAD_RANDOM, 0)));
+            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
+            mLockNumpadRandom.setOnPreferenceChangeListener(this);
         }
 
         // Append the rest of the settings
@@ -750,7 +762,13 @@ public class SecuritySettings extends SettingsPreferenceFragment
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
                     (Boolean) value ? 1 : 0);
-	}
+        } else if (preference == mLockNumpadRandom) {
+            Settings.Secure.putInt(getContentResolver(),
+                    Settings.Secure.LOCK_NUMPAD_RANDOM,
+                    Integer.valueOf((String) value));
+            mLockNumpadRandom.setValue(String.valueOf(value));
+            mLockNumpadRandom.setSummary(mLockNumpadRandom.getEntry());
+        }
         return result;
     }
 
