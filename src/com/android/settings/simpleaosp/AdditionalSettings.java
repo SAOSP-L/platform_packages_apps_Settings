@@ -1,21 +1,17 @@
 package com.android.settings.simpleaosp;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceScreen;
 import android.support.v13.app.FragmentPagerAdapter;
-import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +21,8 @@ import com.android.settings.simpleaosp.StatusBarSettings;
 import com.android.settings.simpleaosp.NavigationBarSettings;
 import com.android.settings.cyanogenmod.NotificationDrawerSettings;
 import com.android.settings.simpleaosp.LockScreenSettings;
-
+import com.android.settings.simpleaosp.PagerSlidingTabStrip;
+import com.android.internal.util.cm.ScreenType;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -35,30 +32,31 @@ import java.util.List;
 
 public class AdditionalSettings extends SettingsPreferenceFragment {
 
-    PagerTabStrip mPagerTabStrip;
     ViewPager mViewPager;
-
     String titleString[];
-
     ViewGroup mContainer;
+    PagerSlidingTabStrip mTabs;
 
     static Bundle mSavedState;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContainer = container;
+	final ActionBar actionBar = getActivity().getActionBar();
+        actionBar.setIcon(R.drawable.ic_settings_buttons);
 
         View view = inflater.inflate(R.layout.additional_settings, container, false);
         mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
-        mPagerTabStrip = (PagerTabStrip) view.findViewById(R.id.pagerTabStrip);
-        mPagerTabStrip.setDrawFullUnderline(true);
+	mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
 
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());
         mViewPager.setAdapter(StatusBarAdapter);
-
+       
+	mTabs.setViewPager(mViewPager);
+        setHasOptionsMenu(true);
         return view;
     }
 
-    @Override
+   @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         // After confirming PreferenceScreen is available, we call super.
         super.onActivityCreated(savedInstanceState);
@@ -72,6 +70,9 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
     @Override
     public void onResume() {
         super.onResume();
+ 	if (!ScreenType.isTablet(getActivity())) {
+            mContainer.setPadding(0, 0, 0, 0);
+        }
     }
 
     class StatusBarAdapter extends FragmentPagerAdapter {
@@ -84,7 +85,6 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
             frags[1] = new NavigationBarSettings();
 	    frags[2] = new NotificationDrawerSettings();
 	    frags[3] = new LockScreenSettings();
-
         }
 
         @Override
@@ -113,5 +113,4 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
         return titleString;
     }
 }
-
 

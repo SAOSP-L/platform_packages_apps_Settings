@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:simpleaosp="http://schemas.android.com/apk/res-auto"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
+
+    <com.android.settings.simpleaosp.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/background_tab"
+            simpleaosp:dividerColor="@color/theme_accent"
+            simpleaosp:indicatorColor="@color/theme_accent"
+	    android:textColor="@color/theme_accent"/>
 
     <android.support.v4.view.ViewPager
             android:id="@+id/viewPager"
@@ -10,17 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1.0">
-
-        <android.support.v4.view.PagerTabStrip
-                android:id="@+id/pagerTabStrip"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:textSize="14sp"
-                android:textAppearance="@style/TextAppearance.PagerTabsSystemSettings"
-                android:textColor="@color/theme_accent"/>
     </android.support.v4.view.ViewPager>
 
 </LinearLayout>
-
 

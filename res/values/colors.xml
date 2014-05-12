@@ -127,4 +127,6 @@
 
     <!-- Personal Dictionary Add Icon -->
     <drawable name="ic_menu_add_word">@drawable/ic_menu_add_dark</drawable>
+
+    <color name="background_tab_pressed">#1AFFFFFF</color>
 </resources>
