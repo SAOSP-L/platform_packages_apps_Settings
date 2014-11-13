@@ -226,32 +226,4 @@
     <dimen name="bluetooth_pairing_padding">20dp</dimen>
 
     <dimen name="wifi_divider_height">1px</dimen>
-
-    <!-- Color picker -->
-    <dimen name="color_swatch_size">16dp</dimen>
-    <dimen name="color_swatch_stroke_width">4dp</dimen>
-
-    <!-- FAB Dimensions -->
-    <dimen name="fab_size">56dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
-    <dimen name="fab_icon_size">24dp</dimen>
-    <dimen name="fab_elevation_normal">8dp</dimen>
-    <dimen name="fab_elevation_pressed">6dp</dimen>
-
-    <!-- QS tiles -->
-    <dimen name="qs_tile_max_size">120dp</dimen>
-    <dimen name="qs_tile_max_padding">10dp</dimen>
-    <dimen name="qs_tile_dragged_z">10dp</dimen>
-
-    <!-- Lockscreen shortcuts -->
-    <dimen name="shortcut_picker_left_padding">40dip</dimen>
-    <dimen name="lockscreen_icon_side_padding">10dp</dimen>
-    <dimen name="lockscreen_icon_size">35dp</dimen>
-    <dimen name="phone_side_padding">10dp</dimen>
-    <dimen name="phone_bottom_padding">40dp</dimen>
-    <dimen name="phone_width">320dp</dimen>
-    <dimen name="phone_height">420dp</dimen>
-
-    <!-- Expanded desktop -->
-    <dimen name="fab_line_width">2dp</dimen>
 </resources>
