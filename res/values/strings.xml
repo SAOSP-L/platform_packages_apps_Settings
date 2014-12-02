@@ -6614,4 +6614,8 @@
     
     <!-- Lock screen settings -->
     <string name="lock_screen_title">Lock screen</string>
+
+    <!-- Quik settings disable on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Disable on lockscreen</string>
+    <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen</string>
 </resources>
