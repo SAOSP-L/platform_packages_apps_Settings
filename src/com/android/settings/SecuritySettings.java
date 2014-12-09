@@ -34,6 +34,7 @@ import android.os.UserManager;
 import android.preference.SwitchPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
@@ -56,7 +57,7 @@ import com.android.settings.search.Index;
 import com.android.settings.search.Indexable;
 import com.android.settings.search.SearchIndexableRaw;
 import com.android.settings.R;
-
+import com.android.settings.cyanogenmod.SystemSettingSwitchPreference;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -112,6 +113,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     // Only allow one trust agent on the platform.
     private static final boolean ONLY_ONE_TRUST_AGENT = true;
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
+    private static final String KEY_POWER_MENU_LOCKSCREEN = "lockscreen_enable_power_menu";
 
     // CyanogenMod Additions
     private static final String KEY_APP_SECURITY_CATEGORY = "app_security";
@@ -144,6 +146,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private PreferenceScreen mBlacklist;
 
     private SwitchPreference mBlockOnSecureKeyguard;
+    private SystemSettingSwitchPreference mPowerMenuLockscreen;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -334,6 +337,12 @@ public class SecuritySettings extends SettingsPreferenceFragment
             mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
         } else if (mBlockOnSecureKeyguard != null) {
             prefSet.removePreference(mBlockOnSecureKeyguard);
+        }
+
+        mPowerMenuLockscreen = (SystemSettingSwitchPreference) findPreference(KEY_POWER_MENU_LOCKSCREEN);
+	final PreferenceScreen prefScreen = getPreferenceScreen();
+        if (!lockPatternUtils.isSecure() && mPowerMenuLockscreen != null) {
+            prefScreen.removePreference(mPowerMenuLockscreen);
         }
 
         // Show password
