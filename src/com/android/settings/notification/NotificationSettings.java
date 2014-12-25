@@ -115,6 +115,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private int mRingerMode = -1;
     private SwitchPreference mVolumeLinkNotification;
     private PreferenceCategory mSoundCategory;
+    private Preference mHeadsUp;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -172,6 +173,8 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         mVolumePanelTimeOut.setValue(String.valueOf(volumePanelTimeOut));
         mVolumePanelTimeOut.setOnPreferenceChangeListener(this);
         updateVolumePanelTimeOutSummary(volumePanelTimeOut);
+
+        mHeadsUp = findPreference(Settings.System.HEADS_UP_NOTIFICATION);
     }
 
     @Override
@@ -188,6 +191,11 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
         for (VolumeSeekBarPreference volumePref : mVolumePrefs) {
             volumePref.onActivityResume();
         }
+        
+        boolean headsUpEnabled = Settings.System.getInt(
+                getContentResolver(), Settings.System.HEADS_UP_NOTIFICATION, 1) != 0;
+        mHeadsUp.setSummary(headsUpEnabled
+                ? R.string.summary_heads_up_enabled : R.string.summary_heads_up_disabled);
     }
 
     @Override
