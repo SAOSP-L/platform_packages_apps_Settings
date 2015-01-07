@@ -6565,4 +6565,8 @@
     <!-- Battery saver -->
     <string name="battery_saver_title">Warning color</string>
     <string name="battery_saver_style_reset_message">Reset battery saver warning color?</string>
+
+    <!-- Ignore last app when clearing recents -->
+    <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
+    <string name="recents_clear_all_dismiss_all_summary">Choose whether to dismiss all tasks or ignore the foreground task</string>
 </resources>
