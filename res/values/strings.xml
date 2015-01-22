@@ -6353,7 +6353,9 @@
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_tile_compass">Compass</string>
     <string name="qs_tile_screen_timeout">Screen timeout</string>
-    <string name="qs_tile_lte">Lte</string>
+    <string name="qs_tile_lte">Lte</string>  
+    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
+    <string name="qs_screen_off_tile">Screen off</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Enable privacy guard?</string>
