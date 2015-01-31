@@ -6357,6 +6357,7 @@
     <string name="qs_expanded_desktop_tile">Expanded desktop</string>
     <string name="qs_screen_off_tile">Screen off</string>  
     <string name="qs_sync_tile">Sync</string>
+    <string name="qs_tile_usb_tether">USB tethering</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Enable privacy guard?</string>
