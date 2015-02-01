@@ -622,4 +622,7 @@
     <string name="debug_LAN_category">LAN Settings</string>    
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
+
+    <!-- QuickSettings 4 columns -->
+    <string name="qs_four_columns_title">Show four tiles per row</string>
 </resources>
