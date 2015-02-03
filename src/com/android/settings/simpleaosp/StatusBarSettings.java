@@ -1,5 +1,6 @@
 package com.android.settings.simpleaosp;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -11,7 +12,10 @@ import android.preference.PreferenceScreen;
 import android.preference.Preference;
 import com.android.settings.R;
 import android.provider.Settings;
+import android.provider.SearchIndexableResource;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.search.BaseSearchIndexProvider;
+import com.android.settings.search.Indexable;
 import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
@@ -23,8 +27,11 @@ import android.database.ContentObserver;
 import android.net.Uri;
 import android.os.Handler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StatusBarSettings extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener {
+        OnPreferenceChangeListener, Indexable {
 
     // Statusbar general category
     private static String STATUS_BAR_GENERAL_CATEGORY = "status_bar_general_category";
@@ -161,4 +168,26 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mStatusBarBatteryShowPercent.setEnabled(true);
         }
     }
+
+    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
+            new BaseSearchIndexProvider() {
+                @Override
+                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
+                                                                            boolean enabled) {
+                    ArrayList<SearchIndexableResource> result =
+                            new ArrayList<SearchIndexableResource>();
+
+                    SearchIndexableResource sir = new SearchIndexableResource(context);
+                    sir.xmlResId = R.xml.status_bar_settings;
+                    result.add(sir);
+
+                    return result;
+                }
+
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    ArrayList<String> result = new ArrayList<String>();
+                    return result;
+                }
+            };
 }
