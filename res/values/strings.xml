@@ -6555,4 +6555,7 @@
     <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Disable search bar in recents menu</string>
     <string name="recents_show_searchbar_summary">Disable or enable the search bar in the recents menu</string>
+
+    <!-- Navring targets (enable/disable) -->
+    <string name="navigation_ring_enable_title">Enable navigation rings</string>
 </resources>
