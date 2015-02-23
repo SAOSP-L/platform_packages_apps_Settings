@@ -6201,8 +6201,13 @@
     <string name="status_bar_general_category">General</string>
     <string name="status_bar_title">Status bar</string>
   
-    <string name="status_bar_quick_qs_pulldown_title">One finger QS pull down</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Whether to allow one finger quick settings\nexpansion on the right side of the statusbar.</string>
+    <string name="quick_pulldown_title">Quick pulldown</string>
+    <string name="quick_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_summary_left">Left</string>
+    <string name="quick_pulldown_summary_right">Right</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Brightness control</string>

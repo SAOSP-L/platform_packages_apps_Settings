@@ -2,6 +2,7 @@ package com.android.settings.simpleaosp;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.preference.ListPreference;
@@ -30,8 +31,8 @@ import android.os.Handler;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StatusBarSettings extends SettingsPreferenceFragment implements
-        OnPreferenceChangeListener, Indexable {
+public class StatusBarSettings extends SettingsPreferenceFragment implements Indexable, 
+        Preference.OnPreferenceChangeListener {
 
     // Statusbar general category
     private static String STATUS_BAR_GENERAL_CATEGORY = "status_bar_general_category";
@@ -42,16 +43,17 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 6;
     private static final String KEY_LOCK_CLOCK = "lock_clock";
     private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
+    private static final String QUICK_PULLDOWN = "quick_pulldown";
 
     private PreferenceScreen mClockStyle;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
-
+    private ListPreference mQuickPulldown;
     private PreferenceScreen mLockClock;
 
     @Override
-    public void onCreate(Bundle icicle) {
-        super.onCreate(icicle);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.status_bar_settings);
 	PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
@@ -79,6 +81,22 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 	mClockStyle = (PreferenceScreen) prefSet.findPreference(KEY_STATUS_BAR_CLOCK);
         updateClockStyleDescription();
     }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        PreferenceScreen prefSet = getPreferenceScreen();
+        ContentResolver resolver = getActivity().getContentResolver();
+        mQuickPulldown = (ListPreference) prefSet.findPreference(QUICK_PULLDOWN);
+
+        mQuickPulldown.setOnPreferenceChangeListener(this);
+        int quickPulldownValue = Settings.System.getIntForUser(resolver,
+                Settings.System.QS_QUICK_PULLDOWN, 0, UserHandle.USER_CURRENT);
+        mQuickPulldown.setValue(String.valueOf(quickPulldownValue));
+        updatePulldownSummary(quickPulldownValue);
+    }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -105,7 +123,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                     cr, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryShowPercent);
             mStatusBarBatteryShowPercent.setSummary(mStatusBarBatteryShowPercent.getEntries()[index]);
             return true;
-        }
+        } else if (preference == mQuickPulldown) {
+            int quickPulldownValue = Integer.valueOf((String) newValue);
+            Settings.System.putIntForUser(cr, Settings.System.QS_QUICK_PULLDOWN,
+                    quickPulldownValue, UserHandle.USER_CURRENT);
+            updatePulldownSummary(quickPulldownValue);
+            return true;
+	}
         return false;
     }
 
@@ -129,6 +153,21 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             mStatusBarBatteryShowPercent.setEnabled(true);
         }
     }
+
+    private void updatePulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // quick pulldown deactivated
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_off));
+        } else {
+            String direction = res.getString(value == 2
+                    ? R.string.quick_pulldown_summary_left
+                    : R.string.quick_pulldown_summary_right);
+            mQuickPulldown.setSummary(res.getString(R.string.quick_pulldown_summary, direction));
+        }
+    }
+
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {
