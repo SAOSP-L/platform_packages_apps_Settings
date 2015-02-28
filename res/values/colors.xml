@@ -134,4 +134,6 @@
 
     <!-- Dashboard Category Title Background Color -->
     <color name="dashboard_category_title_bg_color">@android:color/transparent</color>
+
+     <color name="qs_tile_default_background_color">@android:color/transparent</color>
 </resources>
