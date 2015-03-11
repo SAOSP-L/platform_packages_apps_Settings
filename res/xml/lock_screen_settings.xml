@@ -30,5 +30,9 @@
 	    android:summary="@string/lockscreen_targets_summary"
             android:title="@string/lockscreen_targets_message" />
 
+        <PreferenceScreen
+            android:key="lockscreen_weather"
+            android:title="@string/lock_screen_weather_settings_title"
+            android:fragment="com.android.settings.simpleaosp.LockScreenWeatherSettings"/>
 </PreferenceScreen>
 
