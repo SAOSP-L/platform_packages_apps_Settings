@@ -608,6 +608,7 @@ public class DataUsageSummary extends HighlightingFragment implements Indexable 
                 final Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setComponent(new ComponentName("com.android.phone",
                         "com.android.phone.MobileNetworkSettings"));
+                intent.putExtra("TARGET_THEME", "Theme.Material.Settings");
                 startActivity(intent);
                 return true;
             }
