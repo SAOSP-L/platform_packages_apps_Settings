@@ -6051,7 +6051,7 @@
    <string name="slot_number">(Slot<xliff:g id="slot_num">%1$d</xliff:g>)</string>
 
    <!-- SimpleAOSP build date-->
-   <string name="build_date">SimpleAOSP build date</string>
+   <string name="build_date">SAOSP-L build date</string>
    <string name="build_date_default">2014-01-01-0000</string>
 
    <!-- Generic strings -->
