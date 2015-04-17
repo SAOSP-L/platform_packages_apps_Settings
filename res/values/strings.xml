@@ -6569,4 +6569,8 @@
     <!-- Ignore last app when clearing recents -->
     <string name="recents_clear_all_dismiss_all_title">Clear all tasks</string>
     <string name="recents_clear_all_dismiss_all_summary">Choose whether to dismiss all tasks or ignore the foreground task</string>
+
+    <!-- Silent mode -->
+    <string name="none_is_silent_title">None is Silent mode</string>
+    <string name="none_is_silent_summary">Silent mode always sounds alarms</string>
 </resources>
