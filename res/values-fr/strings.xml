@@ -2536,7 +2536,7 @@
     <string name="navigation_bar_title">Barre de navigation</string>
 
     <!-- Navigation Bar Height -->
-    <string name="navigation_bar_height">Hauteur</string>
+    <string name="navigation_bar_height">Hauteur de la barre de navigation</string>
     <string name="navigation_bar_height_48">48 dp (Par défaut)</string>
     <string name="navigation_bar_height_44">44 dp</string>
     <string name="navigation_bar_height_40">40 dp</string>
@@ -2606,8 +2606,10 @@
     <string name="show_clear_all_recents_button_summary">Afficher le bouton tout effacer sur le panneau récents</string>
     <string name="recents_clear_all_location_title">Emplacement du bouton d\'effacement</string>
     <string name="recents_clear_all_location_top_right">En haut à droite</string>
+    <string name="recents_clear_all_location_top_center">En haut au centre</string>
     <string name="recents_clear_all_location_top_left">En haut à gauche</string>
     <string name="recents_clear_all_location_bottom_right">En bas à droite</string>
+    <string name="recents_clear_all_location_bottom_center">En bas au centre</string>
     <string name="recents_clear_all_location_bottom_left">En bas à gauche</string>
 
     <!-- Color Picker -->
@@ -2630,6 +2632,9 @@
     <string name="display_rotation_180_title">180 degrés</string>
     <string name="display_rotation_270_title">270 degrés</string>
 
+    <!-- Advanced sound category -->
+    <string name="advanced_sound_category">Sons avancés</string>
+    
     <!-- Sound settings -->
     <string name="advanced_sound_title">Options avancées</string>
     <string name="sound_title">Son</string>
@@ -2686,8 +2691,6 @@
     <string name="clock_title_enable">Alignement</string>
     <string name="clock_enabled">Activée</string>
     <string name="clock_disabled">Désactivée</string>
-    <string name="clock_color_title">Couleur</string>
-    <string name="status_bar_clock_style_reset">réinitialiser la couleur</string>
     <string name="status_bar_show_clock_title">Afficher l\'heure et la date</string>
     <string name="status_bar_am_pm_title">AM / PM</string>
     <string name="status_bar_am_pm_info">Le format 24 heures est activé</string>
@@ -2695,6 +2698,7 @@
     <string name="enable_clock_weekday_summary">Jour de la semaine Abrégé avant l\'heure</string>
     <string name="right_clock">À droite</string>
     <string name="center_clock">Centrée</string>
+    <string name="left_clock">À gauche</string>
     <string name="dont_show">Ne pas afficher</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Affichage de la date personnalisée avant l\'horloge</string>
@@ -2712,7 +2716,6 @@
     <string name="clock_date_style_lowercase">Minuscule</string>
     <string name="clock_date_style_uppercase">Majuscule</string>
     <string name="clock_date_format_custom">Personnaliser le format</string>
-    <string name="status_bar_clock_style_reset_message">Réinitialiser la couleur de l\'horloge ?</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Paramètres rapide</string>
@@ -2745,14 +2748,14 @@
     <string name="app_security_title">Sécurité des applications</string>
 
    <!-- Blacklist preferences -->
-    <string name="blacklist_title">Liste noire</string>
-    <string name="blacklist_edit_dialog_title">Éditer les entrées de la liste noire</string>
+    <string name="blacklist_title">Liste des appelants bloqués</string>
+    <string name="blacklist_edit_dialog_title">Éditer les numéros de téléphone bloqués</string>
     <string name="blacklist_prefs">Paramètres</string>
     <string name="blacklist_button_delete">Supprimer</string>
-    <string name="blacklist_empty_text">Aucun numéro dans votre liste noire. Ajouter une entrée en appuyant sur le bouton Ajouter (+).</string>
-    <string name="blacklist_disabled_empty_text">Pour bloquer les appels et/ou messages de certains numéros, activez la liste noire.</string>
+    <string name="blacklist_empty_text">Aucun numéro bloqué dans votre liste. Ajouter une entrée en appuyant sur le bouton Ajouter (+).</string>
+    <string name="blacklist_disabled_empty_text">Pour bloquer les appels et/ou messages de certains numéros, activez la liste des appelants bloqués.</string>
     <string name="blacklist_summary_disabled">Désactiver</string>
-    <string name="blacklist_summary">Les appels et messages de numéros de téléphone sur la liste noire seront bloqués</string>
+    <string name="blacklist_summary">Vous ne recevrez plus les appels ou les messages entrants à partir des numéros de téléphone de la liste des appelants bloqués</string>
     <string name="blacklist_notify">Afficher les notifications</string>
     <string name="blacklist_private_numbers_title">Numéros privés</string>
     <string name="blacklist_private_numbers_summary_disabled">Ne pas bloquer les appels des numéros privés</string>
@@ -2767,12 +2770,12 @@
     <string name="blacklist_regex_summary">Utiliser un point comme caractère générique et une astérisque pour la répétition. Exemple, 123.* si le numéro de téléphone commence par 123 et .*123.* si le numéro de téléphone contient 123</string>
     <string name="blacklist_policy_block_calls">Bloquer les appels entrants</string>
     <string name="blacklist_policy_block_messages">Bloquer les messages entrants</string>
-    <string name="blacklist_bad_number_add">Impossible d\'ajouter un numéro non valide à la liste noire</string>
+    <string name="blacklist_bad_number_add">Impossible d\'ajouter un numéro de téléphone non valide à la des appelants bloqués</string>
 
     <!-- Blacklist management -->
     <string name="add_blacklist_number">Ajouter un numéro</string>
     <string name="remove_blacklist_number_title">Supprimer un numéro</string>
-    <string name="remove_blacklist_entry">Voulez vous supprimer cette entrée de la liste noire ?</string>
+    <string name="remove_blacklist_entry">Voulez vous supprimer ce numéro des appelants bloqués ?</string>
     <string name="select_contact">Sélectionner un contact</string>
 
     <!-- Weather in status bar -->
@@ -2800,8 +2803,8 @@
     <string name="qs_main_tiles_title">Gestion de la première rangée</string>
     <string name="qs_main_tiles_summary_on">Deux principales tuiles sur la première rangée</string>
     <string name="qs_main_tiles_summary_off">Trois ou quatre tuiles sur chaque rangée</string>
-    <string name="qs_advanced_location_title">Activer les paramètres de localisation avancés</string>
-    <string name="qs_advanced_location_summary">Afficher les paramètres avancés de localisation en touchant la tuile localisation</string>
+    <string name="qs_advanced_location_title">Activer la localisation avancée</string>
+    <string name="qs_advanced_location_summary">Activer les paramètres avancés sur la tuile localisation</string>
     <string name="qs_tile_wifi">Wi\u2011Fi</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
     <string name="qs_tile_display_inversion">inversion des couleurs</string>
@@ -2816,12 +2819,14 @@
     <string name="qs_tile_nfc">NFC</string>
     <string name="qs_tile_compass">Boussole</string>
     <string name="qs_tile_screen_timeout">Mise en veille de l\'écran</string>
-    <string name="qs_tile_lte">Lte</string>  
+    <string name="qs_tile_lte">LTE</string>  
     <string name="qs_expanded_desktop_tile">Bureau étendu</string>
     <string name="qs_screen_off_tile">Éteindre l\'écran</string>
     <string name="qs_sync_tile">Synchronisation</string>
     <string name="qs_tile_usb_tether">Modem USB</string>
     <string name="qs_screenshot_tile">Capture d\'écran</string>
+    <string name="qs_tile_heads_up">Notification flottante</string>
+    <string name="qs_tile_ambient_display">Luminosité ambiante</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Activer la protection de la vie privée ?</string>
@@ -2893,6 +2898,7 @@
 
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_settings_title">Écran de verrouillage</string>
+    <string name="lockscreen_targets_summary">Voir ou changer les raccourcis de l\'écran de verrouillage</string>
     <string name="lockscreen_targets_message">Raccourcis de l\'écran de verrouillage</string>
     <string name="lockscreen_default_target">Par défaut</string>
     <string name="lockscreen_none_target">Aucun</string>
@@ -2931,8 +2937,8 @@
     <string name="navigation_bar_reset_message">Supprimer les paramètres actuels et restaurer la configuration par défaut ?</string>
 
     <!-- Navigation bar cursor -->
-    <string name="navigation_bar_arrow_keys_title">Afficher les touches fléchées pendant la frappe</string>
-    <string name="navigation_bar_arrow_keys_summary">Afficher les touches curseur gauche et droite lors de la saisie. Remplace le sélecteur de clavier.</string>
+    <string name="navigation_bar_arrow_keys_title">Afficher les touches fléchées</string>
+    <string name="navigation_bar_arrow_keys_summary">Afficher les touches curseur gauche et curseur droit lors de la saisie. Remplace le sélecteur de clavier.</string>
    
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Cibles de l\'anneau de navigation</string>
@@ -2986,6 +2992,7 @@
    
     <!-- Power menu -->
     <string name="power_menu_title">Menu d\'alimentation</string>
+    <string name="power_menu_title_summary">Voir ou changer les entrées du menu d\'alimentation</string>
     <string name="power_menu_reboot_title">Menu de redémarrage</string>
     <string name="power_menu_screenshot_title">Capture d\'écran</string>
     <string name="power_menu_airplane_title">Mode avion</string>
@@ -3029,4 +3036,62 @@
     <!-- Ignore last app when clearing recents -->
     <string name="recents_clear_all_dismiss_all_title">Effacer toutes les tâches</string>
     <string name="recents_clear_all_dismiss_all_summary">Inclure la tâche en premier plan lors de l\'effacement</string>
+    
+    <!-- Silent mode -->
+    <string name="none_is_silent_title">Changer le mode silencieux</string>
+    <string name="none_is_silent_summary">En mode silencieux l\'alarme sonne toujours</string>
+    <string name="allow_lights_title">Autoriser les voyants de notification</string>
+    
+    <!-- Heads up -->
+    <string name="heads_up_notifications">Notifications flottantes</string>
+    <string name="summary_heads_up_enabled">Les notifications sont activées</string>
+    <string name="summary_heads_up_disabled">Les notifications sont désactivées</string>
+    
+    <!-- Advanced reboot options -->
+    <string name="advanced_reboot_title">Redémarrage avancé</string>
+    <string name="advanced_reboot_summary">Lorsque déverrouillé, inclure les options dans le menu d\'alimentation pour redémarrer en Recovery, bootloader ou effectuer un redémarrage logiciel</string>
+
+    <!-- Heads Up -->
+    <string name="category_heads_up">Notifications flottantes</string>
+    <string name="summary_heads_up_enabled">Notifications flottantes activées</string>
+    <string name="summary_heads_up_disabled">Notifications flottantes désactivées</string>
+    <string name="add_heads_up_package">Ajouter une application</string>
+    <string name="add_heads_up_dnd_summary">Ne pas afficher les notifications flottantes dans cette application</string>
+    <string name="add_heads_up_blacklist_summary">Ne pas afficher les notifications flottantes de cette application</string>
+    <string name="heads_up_dnd_title">Ne pas déranger</string>
+    <string name="heads_up_blacklist_title">Liste noire</string>
+    <string name="heads_up_disabled_notice">Pour permettre aux applications d\'afficher des notifications interactives dans une fenêtre contextuel sur votre écran, activer les notifications flottantes.</string>
+
+    <!-- Heads up timeout -->
+    <string name="heads_up_time_out_title">Temporisation</string>
+    <string name="heads_up_time_out_summary">La notification sera afficher pendant <xliff:g id="number">%d</xliff:g> secondes</string>
+    <string name="heads_up_time_out_never_summary">La notification s\'affichera jusqu\'à ce qu\'elle soit rejetée</string>
+    <string name="heads_up_time_out_2sec">2 secondes</string>
+    <string name="heads_up_time_out_4sec">4 secondes</string>
+    <string name="heads_up_time_out_6sec">6 secondes</string>
+    <string name="heads_up_time_out_8sec">8 secondes</string>
+    <string name="heads_up_time_out_10sec">10 secondes</string>
+    <string name="heads_up_time_out_never">Jamais</string>
+    
+    <!-- Swap Volume Buttons -->
+    <string name="swap_volume_buttons_title">Réorienter</string>
+    <string name="swap_volume_buttons_summary">Permuter les boutons de volume lorsque l\'écran est tourné</string>
+    
+    
+    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
+    
+    <!-- Lock screen settings -->
+    <string name="lock_screen_title">Écran de verrouillage</string>
+    
+    <!-- Quik settings disable on lockscreen -->
+    <string name="block_on_secure_keyguard_title">Désactiver sur l\'écran de verrouillage</string>
+    <string name="block_on_secure_keyguard_summary">Désactiver les paramètres rapides sur l\'écran de verrouillage sécurisé</string>
+    
+    <!--Power menu -->
+    <string name="power_category">Menu d\'alimentation</string>
+    <string name="lockscreen_enable_power_menu_title">Afficher le menu d\'alimentation sur l\'écran de verrouillage</string>
+    <string name="lockscreen_enable_power_menu_summary">Cette option désactive seulement le menu d\'alimentation sur l\'écran de verrouillage sécurisé</string>
+
+    <string name="bluetooth_pan_profile_summary_use_for_error">Erreur de connexion, le modem Bluetooth est-il activé sur cet appareil ?</string>
 </resources>
