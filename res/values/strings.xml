@@ -6621,4 +6621,6 @@
     <!--Power menu -->
     <string name="lockscreen_enable_power_menu_title">Show power menu on lock screen</string>
     <string name="lockscreen_enable_power_menu_summary">This option will disable the power menu on secure lock screens</string>
+
+    <string name="bluetooth_pan_profile_summary_use_for_error">Connection error; is Bluetooth tethering enabled on this device?</string>
 </resources>
