@@ -77,6 +77,7 @@ import com.android.settings.blacklist.BlacklistSettings;
 import com.android.settings.bluetooth.BluetoothSettings;
 import com.android.settings.simpleaosp.DisplayRotation;
 import com.android.settings.simpleaosp.AdditionalSettings;
+import com.android.settings.headsup.HeadsUpSettings;
 import com.android.settings.dashboard.DashboardCategory;
 import com.android.settings.dashboard.DashboardSummary;
 import com.android.settings.dashboard.DashboardTile;
@@ -311,7 +312,8 @@ public class SettingsActivity extends Activity
             ApnSettings.class.getName(),
             BlacklistSettings.class.getName(),         
             DisplayRotation.class.getName(),          
-            ExpandedDesktopPreferenceFragment.class.getName()
+            ExpandedDesktopPreferenceFragment.class.getName(),
+	    HeadsUpSettings.class.getName()
     };
 
 
