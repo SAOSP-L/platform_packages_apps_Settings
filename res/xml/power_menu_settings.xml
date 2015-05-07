@@ -68,5 +68,6 @@
 	android:key="screen_recorder"
 	android:title="@string/screen_recorder_title"
         android:summary="@string/screen_recorder_summary"
+        android:dependency="screenrecord"
 	android:fragment="com.android.settings.simpleaosp.ScreenRecorderSettings" />
 </PreferenceScreen>
