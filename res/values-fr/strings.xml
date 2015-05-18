@@ -2667,8 +2667,14 @@
     <string name="status_bar_general_category">Général</string>
     <string name="status_bar_title">Barre de statut</string>
   
-    <string name="status_bar_quick_qs_pulldown_title">Dérouler les paramètres rapides avec un doigt</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Permettre les réglages rapides ou l\'expansion de la barre d\'état sur le côté droit avec un doigt.</string>
+    <string name="quick_pulldown_title">Dérouler les paramètres rapides</string>
+    <string name="quick_pulldown_summary">Glisser sur le coté %1$s de la barre de statut affiche les paramètres rapides</string>
+
+    <string name="quick_pulldown_summary_left">gauche</string>
+    <string name="quick_pulldown_summary_right">droit</string>
+    <string name="quick_pulldown_off">Désactivé</string>
+    <string name="quick_pulldown_left">Gauche</string>
+    <string name="quick_pulldown_right">Droit</string>
 
     <!-- Status bar brightness control -->
     <string name="status_bar_toggle_brightness">Curseur de luminosité</string>
@@ -2716,13 +2722,6 @@
     <string name="clock_date_style_lowercase">Minuscule</string>
     <string name="clock_date_style_uppercase">Majuscule</string>
     <string name="clock_date_format_custom">Personnaliser le format</string>
-
-    <!-- QuickSettings: Quick Pulldown -->
-    <string name="title_quick_pulldown">Paramètres rapide</string>
-    <string name="summary_quick_pulldown">Glisser sur le côté %1$s de la barre de statut affiche les paramètres rapides.</string>
-    <string name="quick_pulldown_off">désactivé</string>
-    <string name="quick_pulldown_left">gauche</string>
-    <string name="quick_pulldown_right">droit</string>
 
     <!-- Volume rocker music seek options -->
     <string name="volbtn_music_controls_title">Contrôle de la musique</string>
@@ -2887,6 +2886,7 @@
     <string name="battery_light_full_color_title">Complètement chargée</string>
 
     <!-- Lights settings screen, notification light settings -->
+    <string name="display_category_light_options_title">Voyants</string>
     <string name="notification_light_title">Voyant de notification</string>
     <string name="notification_light_general_title">Général</string>
     <string name="notification_light_applist_title">Applications</string>
