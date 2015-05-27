@@ -2817,7 +2817,7 @@
     <string name="qs_tile_lte">LTE</string>  
     <string name="qs_expanded_desktop_tile">Расширенный экран</string>
     <string name="qs_screen_off_tile">Выключить экран</string>  
-    <string name="qs_sync_tile">Синхронизация</string>
+    <string name="qs_tile_sync">Синхронизация</string>
     <string name="qs_tile_usb_tether">USB-модем</string>
     <string name="qs_screenshot_tile">Скриншот</string>
     <string name="qs_tile_heads_up">Всплывающие уведомления</string>
