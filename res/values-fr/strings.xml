@@ -2821,7 +2821,7 @@
     <string name="qs_tile_lte">LTE</string>  
     <string name="qs_expanded_desktop_tile">Bureau étendu</string>
     <string name="qs_screen_off_tile">Éteindre l\'écran</string>
-    <string name="qs_sync_tile">Synchronisation</string>
+    <string name="qs_tile_sync">Synchronisation</string>
     <string name="qs_tile_usb_tether">Modem USB</string>
     <string name="qs_screenshot_tile">Capture d\'écran</string>
     <string name="qs_tile_heads_up">Notification flottante</string>
