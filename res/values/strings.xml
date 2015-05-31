@@ -6426,6 +6426,7 @@
     <string name="notification_light_default_value">Default</string>
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="category_lights">Lights</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_settings_title">Lock screen</string>
