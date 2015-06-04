@@ -219,8 +219,6 @@
     <!-- Screen security -->
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
     <string name="unlock_quick_unlock_control_summary">Автоматическая разблокировка при вводе правильного пароля или PIN-кода</string>
-    <string name="unlock_scramble_pin_layout_title">Перемешивать кнопки</string>
-    <string name="unlock_scramble_pin_layout_summary">Переставлять кнопки ввода PIN-кода в случайном порядке</string>
 
     <!-- Per app controls for LP keyguard notifications -->
     <string name="app_notification_show_on_keyguard_title">На экране блокировки</string>
@@ -379,6 +377,7 @@
     <string name="notification_light_default_value">По умолчанию</string>
     <string name="notification_light_missed_call_title">Пропущенный вызов</string>
     <string name="notification_light_voicemail_title">Голосовая почта</string>
+    <string name="category_lights">Световая индикация</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_settings_title">Экран блокировки</string>
@@ -493,10 +492,6 @@
     <string name="notification_volume_option_title">Громкость уведомлений</string>
     <string name="ring_notification_volume_option_tile">Громкость рингтона и уведомлений</string>
    
-    <!-- Long press on lock screen lock icon to sleep -->
-    <string name="longpress_lock_icon_to_sleep_title">Длительное нажатие по иконке замка блокирует экран</string>
-    <string name="longpress_lock_icon_to_sleep_summary">Опция не работает, если smart lock и спец. возможности включены</string>   
-
     <!-- Volume pane timeout -->
     <string name="category_panel_time_out">Тайм-аут панели</string>
     <string name="volume_panel_time_out_title">Тайм-аут панели громкости</string>
@@ -572,4 +567,20 @@
     <string name="lockscreen_enable_power_menu_summary">Опция отключит меню питания на защищенном экране блокировки</string>
     
     <string name="bluetooth_pan_profile_summary_use_for_error">Ошибка подключения. Проверьте, включён ли Bluetooth-модем на этом устройстве.</string>
+
+
+    <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
+    <string name="double_tap_sleep_anywhere_title">Выключение экрана двойным нажатием</string>
+    <string name="double_tap_sleep_anywhere_summary">Дважды нажмите в любом месте экрана блокировки чтобы отключить экран</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Изменение порядка кнопок ввода PIN-кода</string>
+    <string name="lock_numpad_random_dialog_title">Кнопки ввода PIN-кода в случайном порядке</string>
+    <string name="lock_numpad_random_off">Выключено</string>
+    <string name="lock_numpad_random_always">Всегда</string>
+    <string name="lock_numpad_random_on_request">По запросу</string>
+
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Диспетчер задач</string>
+    <string name="enable_task_manager_summary">Кнопка диспетчера задач в расширенной зоне строки состояния</string>
 </resources>
