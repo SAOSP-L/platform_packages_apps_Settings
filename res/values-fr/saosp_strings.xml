@@ -223,8 +223,6 @@
     <!-- Screen security -->
     <string name="unlock_quick_unlock_control_title">Déverrouillage rapide</string>
     <string name="unlock_quick_unlock_control_summary">Déverrouiller automatiquement lorsque le PIN / mot de passe correct est entré</string>
-    <string name="unlock_scramble_pin_layout_title">Mise en page Scramble</string>
-    <string name="unlock_scramble_pin_layout_summary">La mise en page Scramble déverrouille automatiquement l\'appareil</string>
 
     <!-- Per app controls for LP keyguard notifications -->
     <string name="app_notification_show_on_keyguard_title">Afficher sur l\'écran de verrouillage</string>
@@ -383,6 +381,7 @@
     <string name="notification_light_default_value">Défaut</string>
     <string name="notification_light_missed_call_title">Appel manqué</string>
     <string name="notification_light_voicemail_title">Messagerie vocale</string>
+    <string name="category_lights">Voyants</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="lockscreen_settings_title">Écran de verrouillage</string>
@@ -496,11 +495,7 @@
     <string name="notification_volume_option_title">Volume de notification</string>
     <string name="ring_notification_volume_option_tile">Volume de sonnerie et de notification</string>
 
-    <!-- Long press on lock screen lock icon to sleep -->
-    <string name="longpress_lock_icon_to_sleep_title">Appui long sur l\'icône de verrouillage pour mettre en veille</string>
-    <string name="longpress_lock_icon_to_sleep_summary">Cette option ne fonctionne pas si le Smart Lock et l\'exploration de l\'accessibilité tactile sont activées</string>
-
-	<!-- Volume pane timeout -->
+    <!-- Volume pane timeout -->
     <string name="category_panel_time_out">Délai du panneau</string>
     <string name="volume_panel_time_out_title">Délai du panneau de son</string>
     <string name="volume_panel_time_out_summary">Masquer au bout de <xliff:g id="number">%d</xliff:g> secondes. Masquer automatiquement en touchant l\'extérieur</string>
@@ -582,4 +577,19 @@
     <string name="lockscreen_enable_power_menu_summary">Cette option désactive seulement le menu d\'alimentation sur l\'écran de verrouillage sécurisé</string>
 
     <string name="bluetooth_pan_profile_summary_use_for_error">Erreur de connexion, le modem Bluetooth est-il activé sur cet appareil ?</string>
+    
+    <!-- Double tap gesture anywhere on the lock screen put device to sleep -->
+    <string name="double_tap_sleep_anywhere_title">Taper deux fois n\'importe où pour mettre en veille</string>
+    <string name="double_tap_sleep_anywhere_summary">Taper deux fois n\'importe où sur l\'écran de verrouillage pour mettre l\'appareil en veille</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Changer l\'ordre des numéros du pavé PIN</string>
+    <string name="lock_numpad_random_dialog_title">Ordre aléatoire pour le pavé PIN</string>
+    <string name="lock_numpad_random_off">Désactivé</string>
+    <string name="lock_numpad_random_always">Toujours</string>
+    <string name="lock_numpad_random_on_request">Sur demande</string>
+
+    <!-- Task Manager -->
+    <string name="enable_task_manager_title">Gestionnaire de tâches</string>
+    <string name="enable_task_manager_summary">Afficher le bouton du gestionnaire de tâches dans la barre de statut étendue</string>
 </resources>
