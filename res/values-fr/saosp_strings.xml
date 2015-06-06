@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- SimpleAOSP build date-->
@@ -122,10 +136,6 @@
 
     <!-- Advanced sound category -->
     <string name="advanced_sound_category">Sons avancés</string>
-    
-    <!-- Sound settings -->
-    <string name="advanced_sound_title">Options avancées</string>
-    <string name="sound_title">Son</string>
 
     <!-- Safe headset volume restore checkbox -->
     <string name="safe_headset_volume_title">Volume sécurisé</string>
@@ -157,7 +167,6 @@
   
     <string name="quick_pulldown_title">Dérouler les paramètres rapides</string>
     <string name="quick_pulldown_summary">Glisser sur le coté %1$s de la barre de statut affiche les paramètres rapides</string>
-
     <string name="quick_pulldown_summary_left">gauche</string>
     <string name="quick_pulldown_summary_right">droit</string>
     <string name="quick_pulldown_off">Désactivé</string>
@@ -258,7 +267,6 @@
     <string name="blacklist_bad_number_add">Impossible d\'ajouter un numéro de téléphone non valide à la des appelants bloqués</string>
 
     <!-- Blacklist management -->
-    <string name="add_blacklist_number">Ajouter un numéro</string>
     <string name="remove_blacklist_number_title">Supprimer un numéro</string>
     <string name="remove_blacklist_entry">Voulez vous supprimer ce numéro des appelants bloqués ?</string>
     <string name="select_contact">Sélectionner un contact</string>
@@ -372,7 +380,6 @@
     <string name="battery_light_full_color_title">Complètement chargée</string>
 
     <!-- Lights settings screen, notification light settings -->
-    <string name="display_category_light_options_title">Voyants</string>
     <string name="notification_light_title">Voyant de notification</string>
     <string name="notification_light_general_title">Général</string>
     <string name="notification_light_applist_title">Applications</string>
@@ -443,7 +450,6 @@
     <string name="screen_recorder_video_bitrate_title">Débit</string>
     <string name="power_menu_screenrecord_title">Enregistrement d\'écran</string>
     <string name="screen_recorder_power_menu_summary">Ajouter une option enregistrement d\'écran dans le menu d\'alimentation</string>
-    
 	<!-- video sizes -->
     <string name="screen_recorder_size_240x400">240x400</string>
     <string name="screen_recorder_size_360x640">360x640</string>
@@ -452,7 +458,6 @@
     <string name="screen_recorder_size_540x960">540x960</string>
     <string name="screen_recorder_size_600x1024">600x1024</string>
     <string name="screen_recorder_size_720x1280">720x1280</string>
-    
 	<!-- frame rates -->
     <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
     <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
@@ -490,6 +495,10 @@
     <string name="power_menu_sound_title">Panneau de son</string>
     <string name="power_menu_bug_report_disabled">Le rapport de bug est désactivé dans les paramètres développeur</string>
 
+    <!-- Themes Settings -->
+    <!-- Settings main menu entry -->
+    <string name="themes_settings_title">Thèmes</string>
+	
     <!-- Linked / unlinked notification volume -->
     <string name="link_volume_option_title">Lier le volume de sonnerie et de notification</string>
     <string name="notification_volume_option_title">Volume de notification</string>
@@ -525,11 +534,6 @@
     <string name="none_is_silent_summary">En mode silencieux l\'alarme sonne toujours</string>
     <string name="allow_lights_title">Autoriser les voyants de notification</string>
     
-    <!-- Heads up -->
-    <string name="heads_up_notifications">Notifications flottantes</string>
-    <string name="summary_heads_up_enabled">Les notifications sont activées</string>
-    <string name="summary_heads_up_disabled">Les notifications sont désactivées</string>
-    
     <!-- Advanced reboot options -->
     <string name="advanced_reboot_title">Redémarrage avancé</string>
     <string name="advanced_reboot_summary">Lorsque déverrouillé, inclure les options dans le menu d\'alimentation pour redémarrer en Recovery, bootloader ou effectuer un redémarrage logiciel</string>
@@ -560,7 +564,6 @@
     <string name="swap_volume_buttons_title">Réorienter</string>
     <string name="swap_volume_buttons_summary">Permuter les boutons de volume lorsque l\'écran est tourné</string>
     
-    
     <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
     <string name="bluetooth_accept_all_files">Accepter tous les types de fichiers</string>
     
@@ -572,7 +575,6 @@
     <string name="block_on_secure_keyguard_summary">Désactiver les paramètres rapides sur l\'écran de verrouillage sécurisé</string>
     
     <!--Power menu -->
-    <string name="power_category">Menu d\'alimentation</string>
     <string name="lockscreen_enable_power_menu_title">Afficher le menu d\'alimentation sur l\'écran de verrouillage</string>
     <string name="lockscreen_enable_power_menu_summary">Cette option désactive seulement le menu d\'alimentation sur l\'écran de verrouillage sécurisé</string>
 
@@ -592,4 +594,28 @@
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Gestionnaire de tâches</string>
     <string name="enable_task_manager_summary">Afficher le bouton du gestionnaire de tâches dans la barre de statut étendue</string>
+
+    <!-- Protected Apps -->
+    <string name="menu_hidden_apps_delete">Réinitialiser</string>
+    <string name="menu_hidden_apps_reset_lock">réinitialiser le schéma de verrouillage</string>
+    <string name="protected_apps">Applications protégées</string>
+    <string name="saving_protected_components">Enregistrement de l\'état du composant\u2026</string>
+    <string name="launch_app">Application de lancement</string>
+
+    <!-- Protected apps lockpattern reset button -->
+    <string name="lockpattern_reset_button">Réinitialiser le schéma</string>
+    <string name="lockpattern_settings_reset_summary">Entrer le compte de messagerie principal et le mot de passe associé pour réinitialiser le schéma</string>
+
+    <string name="pa_login_username_hint">Nom d\'utilisateur (email)</string>
+    <string name="pa_login_password_hint">Mot de passe</string>
+    <string name="pa_login_submit_button">Se connecter</string>
+    <string name="pa_login_checking_password">Vérification du compte\u2026</string>
+    <string name="pa_login_incorrect_login">Connexion a échoué</string>
+
+    <!-- setting options for LCD density -->
+    <string name="lcd_density">Densité LCD</string>
+    <string name="dialog_title_lcd_density">Densité LCD</string>
+    <string name="lcd_density_value_format">%d DPI</string>
+    <string name="lcd_density_default_value_format">%d DPI (par défaut)</string>
+    <string name="restarting_ui">Redémarrage de l\'interface utilisateur\u2026</string>
 </resources>
