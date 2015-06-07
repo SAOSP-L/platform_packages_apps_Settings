@@ -26,8 +26,8 @@
     <item quantity="one" msgid="5295687242294085452">"Вы почти у цели. Осталось несколько шагов (<xliff:g id="STEP_COUNT">%1$d</xliff:g>)."</item>
     <item quantity="other" msgid="6722953419953594148">"Вы почти у цели. Осталось несколько шагов (<xliff:g id="STEP_COUNT">%1$d</xliff:g>)."</item>
   </plurals>
-    <string name="show_dev_on" msgid="1110711554982716293">"Вы стали разработчиком!"</string>
-    <string name="show_dev_already" msgid="2151632240145446227">"Не нужно, вы уже разработчик."</string>
+    <string name="show_dev_on" msgid="1110711554982716293">"Вы активировали настройки для разработчика!"</string>
+    <string name="show_dev_already" msgid="2151632240145446227">"Не нужно, настройки для разработчика уже включены."</string>
     <string name="header_category_wireless_networks" msgid="5110914332313954940">"Беспроводные сети"</string>
     <string name="header_category_connections" msgid="6471513040815680662">"Подключения"</string>
     <string name="header_category_device" msgid="4544026001618307754">"Устройство"</string>

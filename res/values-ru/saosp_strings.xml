@@ -583,4 +583,9 @@
     <!-- Task Manager -->
     <string name="enable_task_manager_title">Диспетчер задач</string>
     <string name="enable_task_manager_summary">Кнопка диспетчера задач в расширенной зоне строки состояния</string>
+    
+    <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
+    <string name="debug_LAN_category">Настройки LAN</string>    
+    <!-- Hostname setting -->
+    <string name="device_hostname">Имя хоста устройства</string>
 </resources>
