@@ -160,7 +160,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
         TypedArray a = context.obtainStyledAttributes(attrs, ATTRS);
         tabTextSize = a.getDimensionPixelSize(TEXT_SIZE_INDEX, tabTextSize);
         ColorStateList colorStateList = a.getColorStateList(TEXT_COLOR_INDEX);
-        int textPrimaryColor = a.getColor(TEXT_COLOR_PRIMARY, android.R.color.white);
+        int textPrimaryColor = getResources().getColor(R.color.material_deep_teal_500);
         int tabTextColor = getResources().getColor(R.color.material_deep_teal_500);
 
         underlineColor = textPrimaryColor;
