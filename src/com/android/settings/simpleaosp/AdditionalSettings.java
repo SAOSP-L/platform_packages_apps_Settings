@@ -45,7 +45,7 @@ public class AdditionalSettings extends SettingsPreferenceFragment {
         actionBar.setIcon(R.drawable.ic_settings_buttons);
 
         View view = inflater.inflate(R.layout.additional_settings, container, false);
-        mViewPager = (ViewPager) view.findViewById(R.id.viewPager);
+        mViewPager = (ViewPager) view.findViewById(R.id.pager);
 	mTabs = (PagerSlidingTabStrip) view.findViewById(R.id.tabs);
 
         StatusBarAdapter StatusBarAdapter = new StatusBarAdapter(getFragmentManager());

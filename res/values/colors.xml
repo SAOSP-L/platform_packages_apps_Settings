@@ -129,4 +129,5 @@
     <drawable name="ic_menu_add_word">@drawable/ic_menu_add_dark</drawable>
 
     <color name="background_tab_pressed">#1AFFFFFF</color>
+    <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
 </resources>
