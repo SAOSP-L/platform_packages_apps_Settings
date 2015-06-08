@@ -618,4 +618,9 @@
     <string name="lcd_density_value_format">%d DPI</string>
     <string name="lcd_density_default_value_format">%d DPI (par défaut)</string>
     <string name="restarting_ui">Redémarrage de l\'interface utilisateur\u2026</string>
+    
+    <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
+    <string name="debug_LAN_category">Configurations LAN</string>    
+    <!-- Hostname setting -->
+    <string name="device_hostname">Nom d\'hôte de l\'appareil</string>
 </resources>
