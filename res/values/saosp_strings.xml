@@ -625,4 +625,10 @@
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Show four tiles per row</string>
+
+    <!-- QuickSettings dynamic tiles -->
+    <string name="qs_dynamic_tile_next_alarm">Next alarm</string>
+    <string name="qs_dynamic_tile_ime_selector">IME selector</string>
+    <string name="qs_dynamic_tile_su">Root access</string>
+    <string name="qs_dynamic_tile_adb" translatable="false">ADB</string>
 </resources>
