@@ -121,7 +121,6 @@
     <string-array name="clock_style_entries" translatable="false">
         <item>@string/right_clock</item>
         <item>@string/center_clock</item>
-        <item>@string/left_clock</item>
     </string-array>
 
     <string-array name="clock_style_values" translatable="false">
