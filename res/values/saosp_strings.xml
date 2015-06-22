@@ -702,4 +702,9 @@
     <string name="status_bar_temperature_hidden">Hidden</string>
     <string name="status_bar_temperature_show_scale">Scale showing</string>
     <string name="status_bar_temperature_hide_scale">Scale hidden</string>
+
+    <!-- Keep screen on strings -->
+    <string name="keep_screen_on_never">Never</string>
+    <string name="keep_screen_on_debugging">While USB debugging</string>
+    <string name="keep_screen_on_charging">While charging</string>
 </resources>
