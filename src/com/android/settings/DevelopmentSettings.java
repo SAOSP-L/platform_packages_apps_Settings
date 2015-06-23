@@ -16,6 +16,11 @@
 
 package com.android.settings;
 
+import java.io.InputStreamReader;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.BufferedReader;
+
 import android.app.Activity;
 import android.app.ActivityManagerNative;
 import android.app.AlertDialog;
@@ -70,6 +75,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settings.widget.SwitchBar;
 import com.android.settings.util.Helpers;
+import com.android.settings.util.CMDProcessor;
 
 import dalvik.system.VMRuntime;
 
@@ -183,6 +189,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String ADVANCED_REBOOT_KEY = "advanced_reboot";
 
+    private static final String SELINUX = "selinux";
+
     private IWindowManager mWindowManager;
     private IBackupManager mBackupManager;
     private DevicePolicyManager mDpm;
@@ -256,6 +264,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private SwitchPreference mAdvancedReboot;
 
+    private SwitchPreference mSelinux;
+
     private PreferenceScreen mProcessStats;
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
 
@@ -322,6 +332,17 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         if (!showEnableOemUnlockPreference()) {
             removePreference(mEnableOemUnlock);
             mEnableOemUnlock = null;
+        }
+
+        mSelinux = (SwitchPreference) findPreference(SELINUX);
+        mSelinux.setOnPreferenceChangeListener(this);
+
+        if (CMDProcessor.runSuCommand("getenforce").getStdout().contains("Enforcing")) {
+            mSelinux.setChecked(true);
+            mSelinux.setSummary(R.string.selinux_enforcing_title);
+        } else {
+            mSelinux.setChecked(false);
+            mSelinux.setSummary(R.string.selinux_permissive_title);
         }
         mAllowMockLocation = findAndInitSwitchPref(ALLOW_MOCK_LOCATION);
         mDebugViewAttributes = findAndInitSwitchPref(DEBUG_VIEW_ATTRIBUTES);
@@ -1629,6 +1650,15 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mKillAppLongpressDelay) {
             writeAnimationScaleOption(3, mKillAppLongpressDelay, newValue);
+            return true;
+        } else if (preference == mSelinux) {
+            if (newValue.toString().equals("true")) {
+                CMDProcessor.runSuCommand("setenforce 1");
+                mSelinux.setSummary(R.string.selinux_enforcing_title);
+            } else if (newValue.toString().equals("false")) {
+                CMDProcessor.runSuCommand("setenforce 0");
+                mSelinux.setSummary(R.string.selinux_permissive_title);
+            }
             return true;
         }
         return false;
