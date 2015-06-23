@@ -625,4 +625,33 @@
 
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Afficher 4 tuiles par rangées</string>
+    
+    <!-- QuickSettings dynamic tiles -->
+    <string name="qs_dynamic_tile_next_alarm">Prochaine alarme</string>
+    <string name="qs_dynamic_tile_ime_selector">Sélecteur de clavier</string>
+    <string name="qs_dynamic_tile_su">Accès root</string>
+    <string name="qs_dynamic_tile_adb" translatable="false">ADB</string>
+    
+    <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
+    <string name="enable_adb_cm">Débogage Android</string>
+    <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
+    <string name="enable_adb_summary_cm">Activer l\'interface de débogage Android (adb)</string>
+
+    <!-- Setting for displaying USB debugging notification -->
+    <string name="adb_notify">Notification débogage USB</string>
+    <string name="adb_notify_summary">Afficher une notification lorsque le débogage USB est connecté</string>
+    
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">ADB sur le réseau</string>
+    <string name="adb_over_network_summary">Activer le débogage TCP / IP sur les interfaces réseaux (Wi-Fi, réseau USB). Ce paramètre est remis à zéro lors du redémarrage</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">AVERTISSEMENT : Lorsque ADB sur le réseau est activée, votre téléphone est ouvert aux intrusions sur tous les réseaux connectés, y compris le réseau de données GSM !\n\nUtiliser seulement cette fonction lorsque vous êtes connecté sur les réseaux de confiance.\n\nVoulez-vous vraiment pour activer cette fonction ?</string>
+
+    <!-- WiFi auto-configure priorities -->
+    <string name="wifi_auto_config_priorities">Priorité automatique</string>
+    
+    <!-- Selinux Switch -->
+    <string name="selinux_title">Mode Selinux</string>
+    <string name="selinux_permissive_title">Permissive</string>
+    <string name="selinux_enforcing_title">Enforcing</string>
 </resources>
