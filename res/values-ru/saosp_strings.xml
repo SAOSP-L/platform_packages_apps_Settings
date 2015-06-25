@@ -583,6 +583,13 @@
     <string name="enable_task_manager_title">Диспетчер задач</string>
     <string name="enable_task_manager_summary">Кнопка диспетчера задач в расширенной зоне строки состояния</string>
     
+    <!-- setting options for LCD density -->
+    <string name="lcd_density">Плотность экрана</string>
+    <string name="dialog_title_lcd_density">Плотность экрана</string>
+    <string name="lcd_density_value_format">%d DPI</string>
+    <string name="lcd_density_default_value_format">%d DPI (умолч.)</string>
+    <string name="restarting_ui">Перезапуск UI\u2026</string>
+    
     <!-- Preference category for LAN development settings. [CHAR LIMIT=25] -->
     <string name="debug_LAN_category">Настройки LAN</string>    
     <!-- Hostname setting -->
@@ -590,4 +597,32 @@
     
     <!-- QuickSettings 4 columns -->
     <string name="qs_four_columns_title">Показать четыре плитки в ряду</string>
+    
+    <!-- QuickSettings dynamic tiles -->
+    <string name="qs_dynamic_tile_next_alarm">Будильник</string>
+    <string name="qs_dynamic_tile_ime_selector">Выбор способа ввода</string>
+    <string name="qs_dynamic_tile_su">Root доступ</string>
+
+    <!-- Setting checkbox title for Whether to enable Android debugging support on the phone. -->
+    <string name="enable_adb_cm">Режим отладки</string>
+    <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
+    <string name="enable_adb_summary_cm">Включить интерфейс Android Debug Bridge (ADB)</string>
+
+    <!-- Setting for displaying USB debugging notification -->
+    <string name="adb_notify">Уведомление об отладке</string>
+    <string name="adb_notify_summary">Показывать уведомление о включенном режиме отладки по USB или по сети</string>
+
+    <!-- Android debugging over WiFi -->
+    <string name="adb_over_network">Отладка по сети</string>
+    <string name="adb_over_network_summary">Включить режим отладки через сетевые интерфейсы (Wi-Fi и USB-сети). Отладка отключается при перезагрузке устройства.</string>
+    <!-- Warning for Adb over Network -->
+    <string name="adb_over_network_warning">ВНИМАНИЕ: когда включена отладка по сети, устройство открыто для неконтролируемого доступа из всех подключенных сетей!\n\nИспользуйте эту функцию только тогда, когда вы подключены к доверенным сетям.\n\nВы действительно хотите включить эту функцию?</string>
+
+    <!-- WiFi auto-configure priorities -->
+    <string name="wifi_auto_config_priorities">Автоматический приоритет</string>
+    
+    <!-- Selinux Switch -->
+    <string name="selinux_title">Режим Selinux</string>
+    <string name="selinux_permissive_title">Разрешающий</string>
+    <string name="selinux_enforcing_title">Блокировка</string>
 </resources>
