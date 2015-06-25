@@ -276,7 +276,7 @@ public final class SearchIndexableResources {
                         DeviceInfoSettings.class.getName(),
                         R.drawable.ic_settings_about));
 
-         ResMap.put(WifiCallingSettings.class.getName(),
+         sResMap.put(WifiCallingSettings.class.getName(),
                 new SearchIndexableResource(
                         Ranking.getRankForClassName(WifiCallingSettings.class.getName()),
                         R.xml.wifi_calling_settings,
