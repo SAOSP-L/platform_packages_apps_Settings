@@ -49,6 +49,7 @@ import com.android.settings.voice.VoiceInputSettings;
 import com.android.settings.wifi.AdvancedWifiSettings;
 import com.android.settings.wifi.SavedAccessPointsWifiSettings;
 import com.android.settings.wifi.WifiSettings;
+import com.android.settings.WifiCallingSettings;
 import com.android.settings.simpleaosp.StatusBarSettings;
 import com.android.settings.simpleaosp.NavigationBarSettings;
 import com.android.settings.cyanogenmod.NotificationDrawerSettings;
@@ -274,6 +275,13 @@ public final class SearchIndexableResources {
                         NO_DATA_RES_ID,
                         DeviceInfoSettings.class.getName(),
                         R.drawable.ic_settings_about));
+
+         ResMap.put(WifiCallingSettings.class.getName(),
+                new SearchIndexableResource(
+                        Ranking.getRankForClassName(WifiCallingSettings.class.getName()),
+                        R.xml.wifi_calling_settings,
+                        WifiCallingSettings.class.getName(),
+                        R.drawable.ic_settings_wireless));
 
 	sResMap.put(StatusBarSettings.class.getName(),
                 new SearchIndexableResource(
