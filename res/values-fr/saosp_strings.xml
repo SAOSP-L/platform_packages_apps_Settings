@@ -665,5 +665,8 @@
     <string name="lockpattern_settings_enable_error_path_title">Afficher le motif en erreur</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Afficher le motif en point</string>
-	
+    <!-- Whether the keyguard will directly pass to pattern view -->
+    <string name="lock_directly_show_pattern">Afficher directement la vue motif</string>
+    <!-- Whether the keyguard will directly pass to password enter -->
+    <string name="lock_directly_show_password">Afficher directement le mot de passe à entrer</string>
 </resources>
