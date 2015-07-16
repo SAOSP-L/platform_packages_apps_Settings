@@ -630,4 +630,8 @@
     <string name="lockpattern_settings_enable_error_path_title">Показывать неверный ввод</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Показывать точки</string>
+    <!-- Whether the keyguard will directly pass to pattern view -->
+    <string name="lock_directly_show_pattern">Непосредственно показать графический ключ</string>
+    <!-- Whether the keyguard will directly pass to password enter -->
+    <string name="lock_directly_show_password">Непосредственно показать ввод PIN</string>
 </resources>
