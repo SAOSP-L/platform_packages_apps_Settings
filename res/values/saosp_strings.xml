@@ -20,6 +20,7 @@
    <string name="build_date_default">2014-01-01-0000</string>
 
    <!-- Generic strings -->
+    <string name="advanced">Advanced</string>
     <string name="ok_string">OK</string>
     <string name="default_string">Default</string>
     <string name="enabled_string">Enabled</string>
@@ -392,6 +393,7 @@
     <string name="notification_light_default_value">Default</string>
     <string name="notification_light_missed_call_title">Missed call</string>
     <string name="notification_light_voicemail_title">Voicemail</string>
+    <string name="notification_light_screen_on">Lights with screen on</string>
     <string name="category_lights">Lights</string>
 
     <!-- Lockscreen shortcuts -->
