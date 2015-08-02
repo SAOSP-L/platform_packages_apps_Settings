@@ -44,12 +44,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements Ind
     private static final String KEY_LOCK_CLOCK = "lock_clock";
     private static final String KEY_LOCK_CLOCK_PACKAGE_NAME = "com.cyanogenmod.lockclock";
     private static final String QUICK_PULLDOWN = "quick_pulldown";
+    private static final String STATUS_BAR_TEMPERATURE_STYLE = "status_bar_temperature_style";
 
     private PreferenceScreen mClockStyle;
     private ListPreference mStatusBarBattery;
     private ListPreference mStatusBarBatteryShowPercent;
     private ListPreference mQuickPulldown;
     private PreferenceScreen mLockClock;
+    private ListPreference mStatusBarTemperature;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -80,6 +82,13 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements Ind
 
 	mClockStyle = (PreferenceScreen) prefSet.findPreference(KEY_STATUS_BAR_CLOCK);
         updateClockStyleDescription();
+
+        mStatusBarTemperature = (ListPreference) findPreference(STATUS_BAR_TEMPERATURE_STYLE);
+        int temperatureStyle = Settings.System.getInt(resolver,
+                Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, 0);
+        mStatusBarTemperature.setValue(String.valueOf(temperatureStyle));
+        mStatusBarTemperature.setSummary(mStatusBarTemperature.getEntry());
+        mStatusBarTemperature.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -128,6 +137,14 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements Ind
             Settings.System.putIntForUser(cr, Settings.System.QS_QUICK_PULLDOWN,
                     quickPulldownValue, UserHandle.USER_CURRENT);
             updatePulldownSummary(quickPulldownValue);
+            return true;
+        } else if (preference == mStatusBarTemperature) {
+            int temperatureStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarTemperature.findIndexOfValue((String) newValue);
+            Settings.System.putInt(
+                    cr, Settings.System.STATUS_BAR_SHOW_WEATHER_TEMP, temperatureStyle);
+            mStatusBarTemperature.setSummary(
+                    mStatusBarTemperature.getEntries()[index]);
             return true;
 	}
         return false;
