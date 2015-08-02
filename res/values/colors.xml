@@ -85,6 +85,7 @@
 
     <!-- QS tiles -->
     <color name="qs_tile_tint_color">#FF009587</color>
+    <color name="qs_tile_default_background_color">@android:color/transparent</color>
 
     <!-- Expanded desktop -->
     <drawable name="expanded_item_bg_activated">#ffEEEEEE</drawable>
@@ -130,4 +131,7 @@
 
     <color name="background_tab_pressed">#1AFFFFFF</color>
     <color name="material_deep_teal_500">@*android:color/material_deep_teal_500</color>
+
+    <!-- Dashboard Category Title Background Color -->
+    <color name="dashboard_category_title_bg_color">@android:color/transparent</color>
 </resources>
