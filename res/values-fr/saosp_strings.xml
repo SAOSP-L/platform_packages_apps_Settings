@@ -669,4 +669,8 @@
     <string name="lock_directly_show_pattern">Afficher directement la vue motif</string>
     <!-- Whether the keyguard will directly pass to password enter -->
     <string name="lock_directly_show_password">Afficher directement le mot de passe à entrer</string>
+
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
+    <string name="lockscreen_wallpaper_summary">Définir le fond d\'écran de l\'écran de verrouillage</string>
 </resources>
