@@ -209,7 +209,7 @@
     <!-- Volume rocker music seek options -->
     <string name="volbtn_music_controls_title">Управление плеером</string>
     <string name="volbtn_music_controls_summary">Переключать треки долгим нажатием кнопок громкости при выключенном экране</string>
-    <string name="volume_button_toggle_info">Пробуждение кнопкой громсти должно быть отключено</string>
+    <string name="volume_button_toggle_info">Пробуждение кнопкой громкости должно быть отключено</string>
 
     <!-- Show notification count -->
     <string name="status_bar_notif_count_title">Счетчик уведомлений</string>
@@ -583,6 +583,23 @@
     <string name="enable_task_manager_title">Диспетчер задач</string>
     <string name="enable_task_manager_summary">Кнопка диспетчера задач в расширенной зоне строки состояния</string>
     
+    <!-- Protected Apps -->
+    <string name="menu_hidden_apps_delete">Сброс</string>
+    <string name="menu_hidden_apps_reset_lock">Удалить граф. ключ</string>
+    <string name="protected_apps">Заблокир. приложения</string>
+    <string name="saving_protected_components">Сохранение состояния приложений\u2026</string>
+    <string name="launch_app">Запустить прил.</string>
+
+    <!-- Protected apps lockpattern reset button -->
+    <string name="lockpattern_reset_button">Сбросить граф. ключ</string>
+    <string name="lockpattern_settings_reset_summary">Введите адрес эл. почты основного аккаунта и соответствующий пароль для сброса граф. ключа</string>
+
+    <string name="pa_login_username_hint">Имя пользователя (эл. почта)</string>
+    <string name="pa_login_password_hint">Пароль</string>
+    <string name="pa_login_submit_button">Войти</string>
+    <string name="pa_login_checking_password">Проверка данных\u2026</string>
+    <string name="pa_login_incorrect_login">Вход не удался</string>
+    
     <!-- setting options for LCD density -->
     <string name="lcd_density">Плотность экрана</string>
     <string name="dialog_title_lcd_density">Плотность экрана</string>
@@ -634,4 +651,8 @@
     <string name="lock_directly_show_pattern">Непосредственно показать графический ключ</string>
     <!-- Whether the keyguard will directly pass to password enter -->
     <string name="lock_directly_show_password">Непосредственно показать ввод PIN</string>
+    
+    <!-- Lockscreen wallpaper -->
+    <string name="lockscreen_wallpaper_title">Обои</string>
+    <string name="lockscreen_wallpaper_summary">Установить обои экрана блокировки</string>
 </resources>
