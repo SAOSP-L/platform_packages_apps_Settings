@@ -15,7 +15,7 @@
     <string name="reset">Сбросить</string>
     <string name="empty_string">Пусто</string>
     <string name="ok">ОК</string>
-   <string name="font_size_sample">Пример</string>
+    <string name="font_size_sample">Пример</string>
 
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
@@ -85,8 +85,8 @@
     <string name="show_network_traffic_1000">1000 мс</string>
     <string name="show_network_traffic_1500">1500 мс</string>
     <string name="show_network_traffic_2000">2000 мс</string>
-    <string name="network_traffic_autohide">Автоскрытие</string>
-    <string name="network_traffic_autohide_summary">Скрыть монитор сетевого трафика когда нет активности</string>
+    <string name="network_traffic_autohide">Автоматически скрывать</string>
+    <string name="network_traffic_autohide_summary">Скрывать отображение трафика, когда нет сетевой активности</string>
     <string name="network_traffic_autohide_threshold">Порог неактивности</string>
 
     <!-- Recents panel settings -->
@@ -217,7 +217,7 @@
 
     <!-- Screen security -->
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
-    <string name="unlock_quick_unlock_control_summary">Автоматическая разблокировка при вводе правильного пароля или PIN-кода</string>
+    <string name="unlock_quick_unlock_control_summary">Разблокировать автоматически, если введён корректный PIN-код</string>
 
     <!-- Per app controls for LP keyguard notifications -->
     <string name="app_notification_show_on_keyguard_title">На экране блокировки</string>
@@ -284,7 +284,7 @@
     <string name="qs_main_tiles_summary_on">Две главных плитки в первом ряду</string>
     <string name="qs_main_tiles_summary_off">Три плитки в каждом ряду</string>
     <string name="qs_advanced_location_title">Расширенные настройки местоположения</string>
-    <string name="qs_advanced_location_summary">Включить расширенные настройки для местоположения в быстрых настройках</string>
+    <string name="qs_advanced_location_summary">Включить отображение расширенных настроек местоположения</string>
     <string name="qs_tile_wifi">Wi\u2011Fi</string>
     <string name="qs_tile_bluetooth">Bluetooth</string>
     <string name="qs_tile_display_inversion">Инверсия цветов</string>
@@ -538,8 +538,8 @@
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Тайм-аут</string>
-    <string name="heads_up_time_out_summary">Уведомление будет показано в течение <xliff:g id="number">%d</xliff:g> секунд</string>
-    <string name="heads_up_time_out_never_summary">Уведомление будет показано, пока оно не будет удалено</string>
+    <string name="heads_up_time_out_summary">Уведомление будет отображаться <xliff:g id="number">%d</xliff:g> секунд</string>
+    <string name="heads_up_time_out_never_summary">Уведомление будет отображаться до отклонения</string>
     <string name="heads_up_time_out_2sec">2 секунды</string>
     <string name="heads_up_time_out_4sec">4 секунды</string>
     <string name="heads_up_time_out_6sec">6 секунд</string>
@@ -652,7 +652,7 @@
     <!-- Whether the keyguard will directly pass to password enter -->
     <string name="lock_directly_show_password">Непосредственно показать ввод PIN</string>
     
-    <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Обои</string>
-    <string name="lockscreen_wallpaper_summary">Установить обои экрана блокировки</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Жест тремя пальцами</string>
+    <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
 </resources>
