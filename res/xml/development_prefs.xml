@@ -78,11 +78,6 @@
             android:fragment="com.android.settings.applications.ProcessStatsUi">
     </PreferenceScreen>
 
-        <SwitchPreference
-            android:key="selinux"
-            android:title="@string/selinux_title"
-            android:defaultValue="false" />
-
     <Preference android:key="restart_systemui"
             android:title="@string/restart_systemui" />
 
