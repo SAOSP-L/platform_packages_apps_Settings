@@ -670,4 +670,7 @@
     <!-- Whether the keyguard will directly pass to password enter -->
     <string name="lock_directly_show_password">Directly show password enter</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Three finger gesture</string>
+    <string name="three_finger_gesture_summary">Swipe three finger to screenshot</string>
 </resources>
