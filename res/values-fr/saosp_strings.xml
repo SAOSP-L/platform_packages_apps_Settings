@@ -670,7 +670,7 @@
     <!-- Whether the keyguard will directly pass to password enter -->
     <string name="lock_directly_show_password">Afficher directement le mot de passe à entrer</string>
 
-    <!-- Lockscreen wallpaper -->
-    <string name="lockscreen_wallpaper_title">Fond d\'écran</string>
-    <string name="lockscreen_wallpaper_summary">Définir le fond d\'écran de l\'écran de verrouillage</string>
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Geste à trois doigts</string>
+    <string name="three_finger_gesture_summary">Glisser à trois doigts pour une capture d\'écran</string>
 </resources>
