@@ -323,6 +323,7 @@
     <string name="qs_screenshot_tile">Screenshot</string>
     <string name="qs_tile_heads_up">Heads up</string>
     <string name="qs_tile_ambient_display">Ambient display</string>
+    <string name="qs_tile_volume_panel">Volume panel</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Enable privacy guard?</string>
