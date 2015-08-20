@@ -655,4 +655,36 @@
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Жест тремя пальцами</string>
     <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
+    
+    <!-- Lockscreen weather -->
+    <string name="lock_screen_weather_settings_title">Погода</string>
+    <string name="weather_cat_notifications_title">Уведомления</string>
+    <string name="weather_show_weather_title">Показать погоду</string>
+    <string name="weather_show_weather_summary">Включите, чтобы показать информацию о погоде</string>
+    <string name="weather_show_location_title">Показать местоположение</string>
+    <string name="weather_show_location_summary">Включите, чтобы показать местоположение</string>
+    <string name="weather_show_timestamp_title">Показывать время</string>
+    <string name="weather_show_timestamp_summary">Включите, чтобы показать время</string>
+    <string name="weather_condition_icon_title">Значок состояния</string>
+    <string name="weather_condition_icon_dlg_title">Выберите значок для отображения состояния погоды</string>
+    <string name="weather_condition_icon_monochrome_title">Монохромный</string>
+    <string name="weather_condition_icon_colored_title">Цветной</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="icons_title">Значки</string>
+    <string name="position_right_title">Справа</string>
+    <string name="position_centered_title">По центру</string>
+    <string name="hidden_title">Скрыты</string>
+    <string name="weather_hide_panel_title">Скрыть панель погоды</string>
+    <string name="weather_hide_panel_dlg_title">Выберите, когда панель погоды должна быть скрыта</string>
+    <string name="weather_hide_panel_auto_title">Авто</string>
+    <string name="weather_hide_panel_custom_title">Пользовательский</string>
+    <string name="weather_hide_panel_never_title">Никогда</string>
+    <string name="weather_hide_panel_auto_summary">Панель погоды будет скрыта, когда видимые уведомления достигнут максимально допустимого уведомления на экране блокировки</string>
+    <string name="weather_hide_panel_custom_summary">Панель погоды будет скрыта, когда видимые уведомления достигнут выбранного количества уведомлений</string>
+    <string name="weather_hide_panel_never_summary">Панель погоды не будет скрыта</string>
+    <string name="weather_number_of_notifications_title">Количество уведомлений</string>
+
+    <!-- Development shortcut -->
+    <string name="development_shortcut_title">Ярлык для разработчиков</string>
+    <string name="development_shortcut_summary">Включить быстрое управление приложениями в области уведомлений и списке недавних приложений</string>
 </resources>
