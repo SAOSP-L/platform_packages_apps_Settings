@@ -649,11 +649,6 @@
 
     <!-- WiFi auto-configure priorities -->
     <string name="wifi_auto_config_priorities">Priorité automatique</string>
-    
-    <!-- Selinux Switch -->
-    <string name="selinux_title">Mode Selinux</string>
-    <string name="selinux_permissive_title">Permissive</string>
-    <string name="selinux_enforcing_title">Enforcing</string>
 	
     <!-- Sizes for pattern lockscreen -->
     <string name="lock_pattern_size_3" translatable="false">3 \u00d7 3</string>
@@ -673,4 +668,36 @@
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Geste à trois doigts</string>
     <string name="three_finger_gesture_summary">Glisser à trois doigts pour une capture d\'écran</string>
+
+    <!-- Lockscreen weather -->
+    <string name="lock_screen_weather_settings_title">Météo</string>
+    <string name="weather_cat_notifications_title">Notifications</string>
+    <string name="weather_show_weather_title">Afficher la météo</string>
+    <string name="weather_show_weather_summary">Activer pour afficher les informations météo</string>
+    <string name="weather_show_location_title">Afficher l\'emplacement</string>
+    <string name="weather_show_location_summary">Activer pour afficher l\'emplacement</string>
+    <string name="weather_show_timestamp_title">Afficher l\'horodatage</string>
+    <string name="weather_show_timestamp_summary">Activer pour afficher l\'horodatage</string>
+    <string name="weather_condition_icon_title">Icône de condition</string>
+    <string name="weather_condition_icon_dlg_title">Choisir une icône pour afficher les conditions météorologiques</string>
+    <string name="weather_condition_icon_monochrome_title">Monochrome</string>
+    <string name="weather_condition_icon_colored_title">Colorée</string>
+    <string name="weather_condition_icon_vclouds_title">VClouds</string>
+    <string name="icons_title">Icônes</string>
+    <string name="position_right_title">À droite</string>
+    <string name="position_centered_title">Centrées</string>
+    <string name="hidden_title">Cachées</string>
+    <string name="weather_hide_panel_title">Masquer le panneau météo</string>
+    <string name="weather_hide_panel_dlg_title">Choisir quand le panneau météo doit être caché</string>
+    <string name="weather_hide_panel_auto_title">Automatique</string>
+    <string name="weather_hide_panel_custom_title">Personnalisée</string>
+    <string name="weather_hide_panel_never_title">Jamais</string>
+    <string name="weather_hide_panel_auto_summary">Le panneau météo sera caché lorsque les notifications visibles atteindront le maximum autorisé de notifications sur l\'écran de verrouillage</string>
+    <string name="weather_hide_panel_custom_summary">Le panneau météo sera caché lorsque les notifications visibles atteindront le nombre choisi de notifications</string>
+    <string name="weather_hide_panel_never_summary">Le panneau météo ne sera pas caché</string>
+    <string name="weather_number_of_notifications_title">Nombre de notifications</string>
+    
+    <!-- Development shortcut -->
+    <string name="development_shortcut_title">Raccourcis de développement</string>
+    <string name="development_shortcut_summary">Activer les raccourcis de gestion d\'applications dans la zone de notification et la liste des applications récentes</string>
 </resources>
