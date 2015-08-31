@@ -192,10 +192,13 @@
     <string name="clock_date_display">Дата</string>
     <string name="clock_date_display_summary">Показывать дату перед часами</string>
     <string name="clock_date_style">Стиль даты</string>
+    <string name="clock_date_position">Расположение даты</string>
     <string name="clock_date_format">Формат даты</string>
     <string name="clock_date_string_edittext_title">Должно быть в формате даты прим. ММ/дд/гг</string>
     <string name="clock_date_string_edittext_summary">Строка ввода</string>
     <string name="am_pm_clock_normal">Нормальный размер</string>
+    <string name="clock_date_right">Справа от часов</string>
+    <string name="clock_date_left">Слева от часов</string>
     <string name="am_pm_clock_small">Маленький размер</string>
     <string name="am_pm_clock_none">Не показывать</string>
     <string name="clock_date_display_none">Не показывать</string>
@@ -652,12 +655,9 @@
     <!-- Whether the keyguard will directly pass to password enter -->
     <string name="lock_directly_show_password">Непосредственно показать ввод PIN</string>
     
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="three_finger_gesture">Жест тремя пальцами</string>
-    <string name="three_finger_gesture_summary">Проведите тремя пальцами для создания скриншота</string>
-    
     <!-- Lockscreen weather -->
-    <string name="lock_screen_weather_settings_title">Погода</string>
+    <string name="lock_screen_weather_settings_title">Погода на экране блокировки</string>
+    <string name="weather_summary">Изменить настройки показа погоды на экране блокировки</string>
     <string name="weather_cat_notifications_title">Уведомления</string>
     <string name="weather_show_weather_title">Показать погоду</string>
     <string name="weather_show_weather_summary">Включите, чтобы показать информацию о погоде</string>
@@ -687,4 +687,17 @@
     <!-- Development shortcut -->
     <string name="development_shortcut_title">Ярлык для разработчиков</string>
     <string name="development_shortcut_summary">Включить быстрое управление приложениями в области уведомлений и списке недавних приложений</string>
+    
+    <!-- Status bar temperature -->
+    <string name="status_bar_temperature_title">Стиль температуры</string>
+    <string name="status_bar_temperature_hidden">Скрыта</string>
+    <string name="status_bar_temperature_show_scale">Шкала показывается</string>
+    <string name="status_bar_temperature_hide_scale">Шкала скрыта</string>
+
+    <!-- Keep screen on strings -->
+    <string name="keep_screen_on_never">Никогда</string>
+    <string name="keep_screen_on_debugging">При включённой отладке</string>
+    <string name="keep_screen_on_charging">При зарядке</string>
+
+    <string name="quick_settings_reset_message">Сбросить настройки плиток?</string>
 </resources>
