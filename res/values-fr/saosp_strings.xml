@@ -20,6 +20,7 @@
     <string name="build_date_default">2014-01-01-0000</string>
 
     <!-- Generic strings -->
+    <string name="advanced">Avancé</string>
     <string name="ok_string">OK</string>
     <string name="default_string">Par défaut</string>
     <string name="enabled_string">Activé</string>
@@ -201,14 +202,18 @@
     <string name="enable_clock_weekday_summary">Jour de la semaine Abrégé avant l\'heure</string>
     <string name="right_clock">À droite</string>
     <string name="center_clock">Centrée</string>
+    <string name="left_clock">À gauche</string>
     <string name="dont_show">Ne pas afficher</string>
     <string name="clock_date_display">Date</string>
     <string name="clock_date_display_summary">Affichage de la date personnalisée avant l\'horloge</string>
     <string name="clock_date_style">Style de la date</string>
+    <string name="clock_date_position">Position de la date</string>
     <string name="clock_date_format">Format de la date</string>
     <string name="clock_date_string_edittext_title">Doit être au format date eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Entrer la chaîne</string>
     <string name="am_pm_clock_normal">Taille de police normale</string>
+    <string name="clock_date_right">À droite de l\'heure</string>
+    <string name="clock_date_left">À gauche de l\'heure</string>
     <string name="am_pm_clock_small">Taille de police petite</string>
     <string name="am_pm_clock_none">Ne pas afficher</string>
     <string name="clock_date_display_none">Ne pas afficher</string>
@@ -319,6 +324,7 @@
     <string name="qs_screenshot_tile">Capture d\'écran</string>
     <string name="qs_tile_heads_up">Notification flottante</string>
     <string name="qs_tile_ambient_display">Luminosité ambiante</string>
+    <string name="qs_tile_volume_panel">Panneau volume</string>
 
     <!-- Privacy Guard -->
     <string name="privacy_guard_dlg_title">Activer la protection de la vie privée ?</string>
@@ -387,6 +393,7 @@
     <string name="notification_light_default_value">Défaut</string>
     <string name="notification_light_missed_call_title">Appel manqué</string>
     <string name="notification_light_voicemail_title">Messagerie vocale</string>
+    <string name="notification_light_screen_on">Lumières avec l\'écran allumé</string>
     <string name="category_lights">Voyants</string>
 
     <!-- Lockscreen shortcuts -->
@@ -665,12 +672,9 @@
     <!-- Whether the keyguard will directly pass to password enter -->
     <string name="lock_directly_show_password">Afficher directement le mot de passe à entrer</string>
 
-    <!-- Three-fingers-swipe to screenshot -->
-    <string name="three_finger_gesture">Geste à trois doigts</string>
-    <string name="three_finger_gesture_summary">Glisser à trois doigts pour une capture d\'écran</string>
-
     <!-- Lockscreen weather -->
-    <string name="lock_screen_weather_settings_title">Météo</string>
+    <string name="lock_screen_weather_settings_title">Météo sur l\'écran de verrouillage</string>
+    <string name="weather_summary">Voir ou changer les informations sur l\'écran de verrouillage</string>
     <string name="weather_cat_notifications_title">Notifications</string>
     <string name="weather_show_weather_title">Afficher la météo</string>
     <string name="weather_show_weather_summary">Activer pour afficher les informations météo</string>
@@ -700,4 +704,17 @@
     <!-- Development shortcut -->
     <string name="development_shortcut_title">Raccourcis de développement</string>
     <string name="development_shortcut_summary">Activer les raccourcis de gestion d\'applications dans la zone de notification et la liste des applications récentes</string>
+
+    <!-- Status bar temperature -->
+    <string name="status_bar_temperature_title">Style de la Température</string>
+    <string name="status_bar_temperature_hidden">Cachée</string>
+    <string name="status_bar_temperature_show_scale">Montrer l\'échelle</string>
+    <string name="status_bar_temperature_hide_scale">Cacher l\'échelle</string>
+    
+    <!-- Keep screen on strings -->
+    <string name="keep_screen_on_never">Jamais</string>
+    <string name="keep_screen_on_debugging">Pendant le débogage USB</string>
+    <string name="keep_screen_on_charging">Pendant le chargement</string>
+    
+    <string name="quick_settings_reset_message">Réinitialiser les paramètres rapides des tuiles ?</string>
 </resources>
