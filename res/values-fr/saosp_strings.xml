@@ -393,7 +393,9 @@
     <string name="notification_light_default_value">Défaut</string>
     <string name="notification_light_missed_call_title">Appel manqué</string>
     <string name="notification_light_voicemail_title">Messagerie vocale</string>
+    <string name="notification_light_brightness" translatable="false">@string/brightness</string>
     <string name="notification_light_screen_on">Lumières avec l\'écran allumé</string>
+    <string name="keywords_lights_brightness_level">Faible luminosité des leds</string>
     <string name="category_lights">Voyants</string>
 
     <!-- Lockscreen shortcuts -->
@@ -717,4 +719,8 @@
     <string name="keep_screen_on_charging">Pendant le chargement</string>
     
     <string name="quick_settings_reset_message">Réinitialiser les paramètres rapides des tuiles ?</string>
+
+    <!-- Long press on lock screen lock icon to launch torch-->
+    <string name="longpress_lock_icon_torch_title">Appuie long sur l\'icône de verrouillage pour activer la torche</string>
+    <string name="longpress_lock_icon_torch_summary">Cette option ne fonctionnera pas si le Smart Lock et l\'exploration d\'accessibilité tactile sont activées</string>
 </resources>
