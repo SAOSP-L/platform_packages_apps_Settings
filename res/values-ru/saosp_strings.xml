@@ -382,7 +382,8 @@
     <string name="notification_light_default_value">По умолчанию</string>
     <string name="notification_light_missed_call_title">Пропущенный вызов</string>
     <string name="notification_light_voicemail_title">Голосовая почта</string>
-    <string name="notification_light_screen_on">Индикация при вкл. экране</string>    
+    <string name="notification_light_screen_on">Индикация при вкл. экране</string>   
+    <string name="keywords_lights_brightness_level">низкая яркость светодиода</string>
     <string name="category_lights">Световая индикация</string>
 
     <!-- Lockscreen shortcuts -->
@@ -704,4 +705,8 @@
     <string name="keep_screen_on_charging">При зарядке</string>
 
     <string name="quick_settings_reset_message">Сбросить настройки плиток?</string>
+    
+    <!-- Long press on lock screen lock icon to launch torch-->
+    <string name="longpress_lock_icon_torch_title">Длительно нажмите по значку блокировки, чтобы включить фонарик</string>
+    <string name="longpress_lock_icon_torch_summary">Это опция не будет работать если smart lock и спец. возможности включены</string>
 </resources>
